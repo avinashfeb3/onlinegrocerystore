@@ -1,0 +1,49 @@
+.contact_section{
+    .form-control {
+        font-size: 18px;
+        margin: 10px 20px;
+        padding: 10px 20px;
+        textarea {
+            min-height: 15rem;
+        }   
+    }
+    .content-box {
+        .info-box {
+            li {
+                position: relative;
+                padding-left: 7rem;
+                padding-bottom: 3.5rem;
+                margin-bottom: 2.9rem;
+            }
+            i{
+                position: absolute;
+                left: 0;
+                top: 1.5rem;
+                font-size: 4.5rem;
+                line-height: 4.5rem;
+                color: var(--primary-text);            
+            } 
+            p{
+                color: var(--primary-text);
+            }  
+            li a {
+                color: var(--dark-color);
+                font-size: 2.5rem;
+                font-weight: 400;
+                margin-bottom: 0;
+                font-family: var(--secondary-font);
+                text-decoration: none !important;
+            }                 
+        }
+    }
+} 
+
+// Responsive Deign
+
+// Media Query 576px
+@media (max-width: 576px) {
+    .content-box {
+      text-align: center;
+    }
+}
+  

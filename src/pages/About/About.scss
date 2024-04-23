@@ -1,0 +1,53 @@
+.about_section {
+    img{
+        border-radius: 50px;
+        box-shadow: 0 0.2rem 1.5rem rgb(0 0 0 / 10%);
+    }
+    .about-details {
+        margin-bottom: 18px;
+        p {
+            color: var(--primary-text);
+        }
+    }
+}
+
+// Mission Section css
+.mission_wrapper{
+    .card{
+        background-color: var(--dark-color);
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 7%;
+        border-bottom-right-radius: 28%;
+    }
+    h4{
+        font-size: 3em;
+        color: var(--text-white);
+        border-bottom: 2px solid #60cd12;       
+        margin: 1rem 10px 2rem;
+    }
+    p{
+        font-size: 17px;
+        line-height: 25px;
+        color: var(--text-white);
+    }
+}
+
+// Responsive Design
+
+// Media Query 991px
+@media(max-width:991px){
+    .mission_wrapper{
+        .card{
+            margin: 20px 20px;
+        }
+    }
+}
+
+// Media Query 576px
+@media(max-width:576px){
+    .mission_wrapper{
+        .card{
+            margin: 20px 20px;
+        }
+    }
+}

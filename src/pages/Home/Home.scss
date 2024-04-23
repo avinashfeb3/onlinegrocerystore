@@ -1,0 +1,286 @@
+// Carousel Section CSS
+.banner_section {
+  background: url("../../assets/banner-slide/Banner-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+
+  .carousel-item {
+    padding: 3rem 0;
+    height: 90vh;
+  }
+  .carousel-caption {
+    top: 30%;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+    text-align: left;
+    width: 100%;
+
+    h1 {
+      font-size: 5rem;
+      padding: 1.5rem 1.5rem;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 3.5rem;
+      padding: 0.5rem 1.5rem;
+      background-color: var(--dark-color);
+      display: inline;
+      color: var(--text-white);
+    }
+
+    p {
+      max-width: 40rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+// Features Section CSS
+.feature_section {
+  .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+  }
+  & .features-box {
+    background-color: transparent;
+    border: 0.15rem solid var(--light-color);
+    padding: 8rem 0;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #03262c;
+      border-color: #03262c;
+    }
+    & .features-icon-border {
+      background-color: transparent;
+      border-radius: 50%;
+      border: 0.2rem solid var(--light-color);
+      padding: 1.3rem;
+      display: inline-block;
+    }
+
+    & .features-icon {
+      height: 6.5rem;
+      width: 6.5rem;
+      background-color: var(--light-color);
+      margin: auto;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    & img {
+      width: 3.7rem;
+    }
+
+    & h3 {
+      margin-top: 1.5rem;
+      color: var(--primary-text);
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Home About Us Section
+.landing_about_section {
+  background: url("../../assets/about/about-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 9rem 0;
+
+  p {
+    color: var(--primary-text);
+    margin-bottom: 2rem;
+  }
+}
+
+// Home Product Section CSS
+.landing_product_section {
+  .product-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: transparent;
+    border: 0.2rem solid var(--light-color);
+    padding: 2rem 1rem;
+    position: relative;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &:hover .product-detail {
+      bottom: 0;
+    }
+  }
+  .product-img {
+    margin-bottom: 7rem;
+    text-align: center;
+  }
+  h3 {
+    color: var(--primary-text);
+  }
+  span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+    text-decoration: line-through;
+    transition: all 0.3s;
+  }
+  .product-detail {
+    position: absolute;
+    bottom: -22rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: var(--dark-color);
+    transition: all 0.5s ease;
+  }
+}
+
+// Home Tstimonial Section css
+.testimonial_section {
+  background-color: var(--light-color);
+  padding-bottom: 8rem;
+
+  & .carousel-indicators {
+    bottom: -6rem;
+  }
+  & .carousel-indicators button {
+    background-color: var(--dark-color);
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+  }
+  & .card {
+    background: url("../../assets//testimonial/testimonial-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: right;
+    padding: 5rem 5rem 5rem 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border: 0.1rem solid transparent;
+  }
+  & .profile-box {
+    padding: 1.875rem;
+    background-color: var(--dark-color);
+    border-radius: 0.5rem 0 0 0.5rem;
+
+    & img {
+      border-radius: 0.625rem 3.125rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    & .desc-box {
+      padding-left: 2.5rem;
+    }
+  }
+}
+/* Gallery CSS */
+
+.gallery_section {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+// Responsive CSS
+
+// Media Query 1170px
+@media (max-width: 1170px) {
+  /* 02 Banner Section */
+  .banner_section .carousel-item {
+    height: 90vh;
+  }
+
+  .landing_about_section {
+    .about-content {
+      text-align: center; /* Example adjustment */
+    }
+  }
+}
+
+// Media Query 991px
+@media (max-width: 991px) {
+  .landing_about_section {
+    .about-content {
+      padding: 0 20px; /* Example adjustment */
+    }
+  }
+  .landing_product_section {
+    .h5,
+    h5 {
+      font-size: 2.25rem;
+      margin: 0 10px;
+    }
+    p {
+      font-size: 2.25rem;
+      margin: 0 10px;
+    }
+  }
+}
+
+/* Media Query 767px */
+@media (max-width: 767px) {
+  /* 02 Banner Section */
+  .banner_section {
+    min-height: 70vh;
+  }
+
+  .banner_section .carousel-item {
+    height: 70vh;
+  }
+  .landing_about_section {
+    padding: 6rem 0;
+    .about-content {
+      font-size: 14px; /* Example adjustment */
+    }
+  }
+  .landing_product_section {
+    .h5,
+    h5 {
+      font-size: 3.25rem;
+      margin: 0 10px;
+    }
+    p {
+      font-size: 3.25rem;
+      margin: 0 10px;
+    }
+  }
+}
+
+// Media Query 576px
+@media (max-width: 576px) {
+  .landing_about_section {
+    padding: 4rem 0;
+  }
+  .landing_product_section {
+    .h5,
+    h5 {
+      font-size: 3.25rem;
+      margin: 0 10px;
+    }
+    p {
+      font-size: 3.25rem;
+      margin: 0 10px;
+    }
+  }
+}

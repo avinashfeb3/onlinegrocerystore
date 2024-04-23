@@ -1,0 +1,30 @@
+.product_section{
+    .card{
+        img{
+            border-top-left-radius: 30%;
+            border-bottom-left-radius: 7%;
+            border-bottom-right-radius: 28%;
+        }
+    } 
+    .product-content{
+        h2{
+            font-size: 3rem;
+            font-weight: 600;
+            color: var(--primary-text);
+        }
+    }
+    .product-details {
+        h4{
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary-text);
+            margin: 20px 5px 20px 5px;
+        }
+        p {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            margin-right: 2.5rem;
+            line-height: 1.5;
+        }  
+    }
+}

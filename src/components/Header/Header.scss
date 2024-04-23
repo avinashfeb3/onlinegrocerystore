@@ -1,0 +1,121 @@
+// 01 navbar scss
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 2rem;
+  left: 0;
+  z-index: 2;
+
+  .navbar {
+    background: url("../../assets/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 2rem 5rem;
+
+    .navbar-brand {
+      width: 7.5rem;
+      margin-top: -0.1rem;
+    }
+
+    .navbar-nav {
+      .nav-link {
+        color: var(--text-white);
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding: 0.5rem 2rem;
+        margin: 0 0.2rem;
+        font-family: var(--primary-font);
+
+        &:hover,
+        &.active {
+          color: var(--secondary-color);
+        }
+      }
+    }
+
+    .navbar-toggler {
+      color: var(--text-white);
+      font-size: 3rem;
+      height: 2.7rem;
+      padding: 0;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .header_right {
+    ul img {
+      width: 2rem;
+    }
+
+    span {
+      color: var(--secondary-color);
+      display: block;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-right: 1rem;
+    }
+
+    .phone_no {
+      color: var(--text-white);
+      font-size: 1.6rem;
+    }
+
+    a {
+      height: 3.5rem;
+      width: 3.5rem;
+      text-align: center;
+      background-color: #13424a;
+      border-radius: 50%;
+      margin-left: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &.header-scrolled {
+    position: fixed;
+    top: -0.4rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    z-index: 999;
+    /* box-shadow: .5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%); */
+    transition: 0.3s ease-in-out;
+  }
+}
+
+// Responsive SCSS
+
+// Media Query 1170px
+@media (max-width: 1170px) {
+  // Navbar CSS
+  .header {
+    .navbar {
+      background-size: cover;
+      padding: 2rem;
+      text-align: center;
+    }
+    .navbar-nav {
+      margin-top: 2rem;
+      font-size: 30px;
+
+      .nav-link {
+        padding: 0.2rem 0.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+    .header_right span {
+      padding: 0.2rem 0.5rem;
+    }
+  }
+}
